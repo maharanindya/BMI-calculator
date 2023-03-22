@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="calculator">
+            <h1 class="title">Kalkulator BMI</h1>
+            <div class="card">
+
+                <form id="form" name="form" class="form" action="">
+                    <div class="form-group-jk">
+                        <label for="jk">Jenis Kelamin</label>
+                        <div class="radio-input">
+                            <input type="radio" name="jk" id="m" value="m" required>
+                            <label for="jk">Pria</label>
+                            <input type="radio" name="jk" id="f" value="f" required>
+                            <label for="jk">Wanita</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Berat Badan (kg)</label>
+                        <div class="icon-input">
+                            <i class="icon fa-solid fa-pencil"></i>
+                            <input type="number" name="weight" id="weight" value="" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Usia (tahun)</label>
+                        <div class="icon-input">
+                            <i class="icon fa-solid fa-pencil"></i>
+                            <input type="number" name="age" id="age" value="" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Tinggi Badan (cm)</label>
+                        <div class="icon-input">
+                            <i class="icon fa-solid fa-pencil"></i>
+                            <input type="number" name="height" id="height" value="" required>
+                        </div>
+                    </div>
+                    <div class="button-group">
+                        <button onclick="calculate()" class="calculate" id="submit" type="button">Hitung
+                            BMI
+                        </button>
+                        <button onclick="reload()" class="reset" id="submit" type="button" value="Reset">Reset
+                        </button>
+
+                    </div>
+                </form>
+
+                <div class="resultBmi">
+                    <h2 id="hasil"></h2>
+                    <h1 id="result" class="result"></h1>
+                    <h3 class="comment" id="comment"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
